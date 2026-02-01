@@ -1,1 +1,10 @@
+while true do 
+local RS = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+local Http = game:GetService("HttpService")
 
+local Player = Players.LocalPlayer
+local Events = RS:WaitForChild("Events")
+        Events.StickerPrinterActivate:FireServer("Star Egg")
+wait(0.1)
+end
