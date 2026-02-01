@@ -10,7 +10,11 @@ if not isfolder(folder) then
 end
 writefile(path, json)
 
+print("Đã ghi preset vào:", path)
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
+local Player = Players.LocalPlayer
 local Events = ReplicatedStorage:WaitForChild("Events")
 
 -- ===== CONFIG RIÊNG =====
